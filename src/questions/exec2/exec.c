@@ -82,6 +82,20 @@ void imprimir_bolsa_de_valores(struct BolsaDeValores bolsa_de_valores[])
 	}
 }
 
+int menu()
+{
+	int option;
+	printf("\n+================================================================+\n");
+	printf("|\t<--Selecione qual programa deseja executar-->\t\t|\n");
+	printf("|\t\t1 -- Cadastro de alunos\t\t\t\t|\n");
+	printf("|\t\t2 -- Bolsa de valores\t\t\t\t|\n");
+	printf("+================================================================+\n");
+	printf("----------> ");
+	scanf(" %d", &option);
+	printf("Iniciando programa %d...\n\n", option);
+	return option;
+}
+
 void first()
 {
 	struct Aluno alunos[5];
@@ -98,8 +112,10 @@ void second()
 
 int main()
 {
-	// setlocale(LC_ALL, "");
-	// first();
-	second();
+	setlocale(LC_ALL, "");
+	if (menu() == 1)
+		first();
+	else
+		second();
 	return 0;
 }
