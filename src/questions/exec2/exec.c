@@ -21,7 +21,6 @@ struct Aluno
 void cadastrar_alunos(struct Aluno alunos[])
 {
 	int i;
-
 	for (i = 0; i < 5; i++)
 	{
 		printf("Cadastro do aluno %d:\n", i + 1);
@@ -40,7 +39,6 @@ void cadastrar_alunos(struct Aluno alunos[])
 void imprime_alunos_cadastrados(struct Aluno alunos[])
 {
 	int i;
-
 	for (i = 0; i < 5; i++)
 	{
 		printf("\nAluno %d:\n", i + 1);
@@ -55,7 +53,6 @@ void imprime_alunos_cadastrados(struct Aluno alunos[])
 void cadastrar_bolsa(struct BolsaDeValores bolsa_de_valores[])
 {
 	int i;
-
 	for (i = 0; i < 3; i++)
 	{
 		printf("Nome da empresa %d: ", i + 1);
